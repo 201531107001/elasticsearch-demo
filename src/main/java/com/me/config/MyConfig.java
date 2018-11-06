@@ -21,6 +21,7 @@ public class MyConfig {
 				.put("cluster.name", "gqm")
 				.build();
 		
+		@SuppressWarnings("unchecked")
 		TransportClient client = new PreBuiltTransportClient(settings);
 		client.addTransportAddress(node); //可以添加多个节点
 		
